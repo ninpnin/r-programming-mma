@@ -5,9 +5,9 @@ test_that("ridge()", {
   #-----------------------------------------------------------------------------------
   # test for log_importance_weights()
   #-----------------------------------------------------------------------------------
-  expect_true(exists("log_importance_weights"),
-              info = "Error: log_importance_weights() is missing")
-  checkmate::expect_function(log_importance_weights, args = c("data", "dep", "indep", "lambda"), 
+  expect_true(exists("ridge"),
+              info = "Error: ridge() is missing")
+  checkmate::expect_function(ridge, args = c("data", "dep", "indep", "lambda"), 
                              info = "Incorrect function arguments.")
   
   data <- tibble(a=1:3, b = 1:3 * 2 -3, c = c(1,-1,0))
