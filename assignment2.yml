@@ -4,3 +4,5 @@ description : "R Programming: Assignment 2"
 tasks:
   ridge:
     url: Tasks/assignment2_ridge.R
+  pred:
+    url: Tasks/assignment2_pred.R
