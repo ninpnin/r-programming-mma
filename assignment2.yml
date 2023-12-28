@@ -1,0 +1,6 @@
+# Assignment 2
+name  : assignment2
+description : "R Programming: Assignment 2"
+tasks:
+  beta_point_est:
+    url: Tasks/assignment2.R
