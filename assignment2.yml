@@ -8,3 +8,11 @@ tasks:
     url: Tasks/assignment2_pred.R
   cv:
     url: Tasks/assignment2_cv.R
+  z:
+    url: Tasks/assignment2_z.R
+  sigmoid:
+    url: Tasks/assignment2_sigmoid.R
+  gradient_descent:
+    url: Tasks/assignment2_gradient_descent.R
+  predict_logistic:
+    url: Tasks/assignment2_predict_logistic.R
