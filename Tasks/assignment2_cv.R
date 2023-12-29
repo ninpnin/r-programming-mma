@@ -10,9 +10,9 @@ test_that("cv()", {
   checkmate::expect_function(cv, args = c("data", "dep", "indep", "lambda"), 
                              info = "Incorrect function arguments.")
   
-  data <- tibble(a=1:3, b = 1:3 * 2 -3, c = c(1,-1,0))
-  expect_equivalent(cv(data, "c", c("a", "b"), 10.0), 
-                    c(0.02586207, -0.00862069, -0.09482759), 
+  data <- tibble(a=1:4, b = 1:4 * 2 -3, c = c(1,-1,0,2), group=c(1,2,3,4))
+  expect_equivalent(cv(data, "c", c("a", "b"), 3.0), 
+                    1.5, 
                     tol= 0.01, 
                     info = "Error: Incorrect result.")
   

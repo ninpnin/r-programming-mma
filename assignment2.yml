@@ -6,3 +6,5 @@ tasks:
     url: Tasks/assignment2_ridge.R
   pred:
     url: Tasks/assignment2_pred.R
+  cv:
+    url: Tasks/assignment2_cv.R
