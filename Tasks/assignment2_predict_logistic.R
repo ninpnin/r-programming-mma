@@ -11,8 +11,15 @@ test_that("predict_logistic()", {
                              info = "Incorrect function arguments.")
   
   data <- tibble(a=1:3, b = 1:3 * 2 -3, c = c(1,-1,0))
-  expect_equivalent(predict_logistic(data, "c", c("a", "b"), 10.0), 
-                    c(0.02586207, -0.00862069, -0.09482759), 
+  X <- data[c("a", "b")]
+  y <- c(0,0,1)
+  X <- as.matrix(X)
+  beta <- c(1.1, 0.2)
+  beta <- as.matrix(beta)
+  beta0 <- -1.3
+  
+  expect_equivalent(predict_logistic(X, y, beta, beta0),
+                    0.6666667, 
                     tol= 0.01, 
                     info = "Error: Incorrect result.")
   
