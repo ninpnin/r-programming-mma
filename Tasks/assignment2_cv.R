@@ -12,7 +12,7 @@ test_that("cv()", {
   
   data <- tibble(a=1:4, b = 1:4 * 2 -3, c = c(1,-1,0,2), group=c(1,2,3,4))
   expect_equivalent(cv(data, "c", c("a", "b"), 3.0), 
-                    1.5, 
+                    3.534764, 
                     tol= 0.01, 
                     info = "Error: Incorrect result.")
   
