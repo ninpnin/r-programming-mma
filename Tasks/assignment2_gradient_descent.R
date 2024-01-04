@@ -18,10 +18,21 @@ test_that("gradient_descent()", {
   beta0 <- -1.3
   
   gd_result <- gradient_descent(X, y, 100, 0.1)
+  result_type <- class(gd_result)
+  result_names <- names(gd_result)
+
+  expect_equivalent(result_type,
+                    "list", 
+                    info = "Error: Incorrect result format.")
+
+  expect_equivalent(result_names,
+                    c("beta", "intercept", "loss"), 
+                    info = "Error: Incorrect result format (wrong list keys).")
+
   expect_equivalent(gd_result$beta,
                     c(0.7247067, 1.6009520), 
                     tol= 0.01, 
-                    info = "Error: Incorrect result.")
+                    info = "Error: Incorrect result (beta).")
 
   
 })
