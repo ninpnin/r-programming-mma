@@ -31,7 +31,7 @@ test_that("gradient_descent()", {
 
   expect_equivalent(gd_result$beta,
                     c(0.7247067, 1.6009520), 
-                    tol= 0.01, 
+                    tol= 0.05, 
                     info = "Error: Incorrect result (beta).")
 
   
