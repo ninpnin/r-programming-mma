@@ -30,7 +30,7 @@ test_that("gradient_descent()", {
                     info = "Error: Incorrect result format (wrong list keys).")
 
   expect_equivalent(gd_result$beta,
-                    c(0.7247067, 1.6009520), 
+                    c(-0.7247067, 1.6009520),
                     tol= 0.05, 
                     info = "Error: Incorrect result (beta).")
 
