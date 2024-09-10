@@ -1,4 +1,4 @@
-# r-programming-mma
+# Mark my assignment test suites for the R programming course
 
 To run the tests 
 
